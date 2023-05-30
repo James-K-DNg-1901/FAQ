@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+hr {
+    color: hsl(240, 5%, 91%);
+}
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 60em;
+    height: 34em;
+    background-color: aliceblue;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -18em;
+    background-position-x: -34em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.illustration {
+    width: 30em;
+    height: 30em;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position-x: -5.5em;
+    background-position-y: 4em;
+    position: relative;
+}
+
+.box-desktop {
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 13.5em;
+    right: 20.8em;
+}
+
+.faq-box {
+    width: 27em;
+    margin-right: 2rem;
+    font-size: 15px;
+    position: relative;
+}
+
+.mobile-version {
+    width: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.arrow-up {
+    transform: rotate(-180deg);;
+}
+
+.arrow {
+    width: 1em;
+    height: 0.7em;
+    position: absolute;
+    right: 0; 
+    margin-top: 1em;
+}
+
+.question {
+    width: 27em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.q-text {
+    padding-top: 1em;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.q-text:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
+}
+
+.active {
+    padding-top: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.answer {
+    padding: 1em 0;
+    color: hsl(240, 6%, 50%);
+}
+
+.unactive-answer {
+    opacity: 0;
+    max-height: 0;
+    
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 30em;
+        height: 30em;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position-x: 3em;
+        background-position-y: 0;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .illustration {
+        width: 30em;
+        height: 40em;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position-x: 3em;
+        background-position-y: -4em;
+        position: relative;
+        opacity: 0;
+    }
+
+    .mobile-version {
+        width: 23.5em;
+        position: absolute;
+        top: -10.5em;
+        
+    }
+
+}
